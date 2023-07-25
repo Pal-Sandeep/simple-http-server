@@ -15,7 +15,7 @@ func main() {
 	http.HandleFunc("/", handler)
 	serverBrand := figure.NewColorFigure("Simple HTTP Server", "straight", "green", true)
 	serverBrand.Print()
-	myBrand := figure.NewColorFigure("by PareshPawar.com", "term", "green", true)
+	myBrand := figure.NewColorFigure("by HeySandeep.in", "term", "green", true)
 	myBrand.Print()
 	log.Print("pareshpawar/simple-http-server: Simple HTTP Server Started on port 8081")
 	log.Fatal(http.ListenAndServe("0.0.0.0:8081", nil))
@@ -53,7 +53,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "__________________________________________________________\n")
 	figure.Write(w, serverBrand)
 	fmt.Fprintf(w, "----------------------------------------------------------\n")
-	fmt.Fprintf(w, "                    by PareshPawar.com                    \n")
+	fmt.Fprintf(w, "                    by HeySandeep.in                      \n")
 	fmt.Fprintf(w, "----------------------------------------------------------\n")
 }
 
